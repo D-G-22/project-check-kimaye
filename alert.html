@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The alert message box */
+.alert {
+  padding: 20px;
+  background-color:red;
+  color:white;
+  margin-bottom: 15px;
+  margin: auto;
+  width: 40%;
+  margin-top: 7%;
+  border-style: dashed;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+img{
+    height: 40vh;
+    margin-left: 22%;
+}
+h3{
+    text-align: center;
+}
+input{
+    margin-left: 20%;
+}
+button{
+    margin-left: 22%;
+    color: green;
+    
+}
+    </style>
+</head>
+<body>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <img src="https://drpo5mjxhw4s.cloudfront.net/media/sac/popup/3.svg?v1"/>
+        <h3>We are currently available in Mumbai & Delhi. Please enter your pin code below to check if we deliver to your area.</h3>
+        <input type="text" placeholder="Enter your pin code">
+        <button>DONE</button>
+      </div>
+</body>
+<script>
+    // Get all elements with class="closebtn"
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+    
+    // Loop through all close buttons
+    for (i = 0; i < close.length; i++) {
+      // When someone clicks on a close button
+      close[i].onclick = function(){
+    
+        // Get the parent of <span class="closebtn"> (<div class="alert">)
+        var div = this.parentElement;
+    
+        // Set the opacity of div to 0 (transparent)
+        div.style.opacity = "0";
+    
+        // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+      }
+    }
+    </script>
+</html>
