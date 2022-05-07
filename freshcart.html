@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+      
+        #top{
+            text-align: center;
+            padding:2px;
+            background-color:#437111 !important;
+            color: aliceblue;
+            font-size: 8px;
+        
+        }
+
+        #container{
+            display: flex;
+            justify-content: space-evenly;
+            background-color:white!important;
+            padding: 10px;  
+            text-decoration: none;                
+        }
+
+        #logo{
+            width:110px;                       
+        }
+
+        #logo2{
+            height: 30px;
+            text-align: center;
+            margin-top: 60%;
+        }
+
+        #containers{
+          display: flex;
+          margin: auto;
+          text-align: center;            
+        }
+
+        #sub{
+            margin-right: 11%;
+            margin-left: 11%;           
+            text-decoration: none;              
+        }
+
+        #sub1{
+            margin-left: 6%;
+            margin-right: 6%;
+        }
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: whitesmoke;
+  color:black;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px; 
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {color: #3e8e41;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color: #3e8e41;}
+
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.text>button{
+    color:#f1f1f1;
+    background-color:yellowgreen;
+    font-size: 24px;
+    border-radius: 8%;
+    font-weight: bold;
+    font-size: 50px;
+    border-style: none;
+}
+#sec{
+    background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/jazz-bg-texture-min_1.jpg?v=1616673456");
+    text-align: center;
+    
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+}
+#heading{
+    font-family:Bitterbrush;
+    color: #222;
+}
+.card1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #3e8e41;
+}
+   #combo{
+       text-align: center;
+   }
+
+   .navbar{
+     display: flex;
+     margin-top: 28%;
+   }
+   .navbar>a{
+     margin-left: 16%;
+     color:black
+     
+   }
+   
+     
+   
+   .combo>h1{
+     margin-top:5% ;
+     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+
+   }
+   .combo>h5{
+     margin-bottom: 7%;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 19px;
+
+   }
+   #box{
+     height: 60vh;
+     box-shadow:gainsboro;
+     
+     
+   }
+   #box>img{
+    height: 60vh;
+    border-radius: 10%;
+
+   }
+   #box1{
+     margin-bottom:6%;
+   }
+   #box1>button{
+     background-color: red;
+     color: #f2f2f2;
+     border-style: none;
+     border-radius:10px;
+     padding: 8px;
+     font-size: 18px;
+     
+   }
+   #box1>h1{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   }
+   #card2{
+     display: flex;
+     justify-content:space-evenly;
+     background-color: rgb(109 144 72);
+     border-style:double;
+     color: #f1f1f1;
+   }
+   #combo2{
+     margin-top: 10%;
+     margin-left: 7%;
+     margin-right:9% ;
+   }
+   #combo2>h1{
+     font-size: 38px;
+     font-family: 'Times New Roman', Times, serif;
+     margin-top: -4%;
+   }
+   #combo2>p{
+     font-size: 21px;
+   }
+   
+   #combo2>div{
+     font-weight: bold;
+     font-size:28px;
+     color: #222; 
+     background-position: 15px; 
+     background-color: #bbb;
+     margin-right: 60%;
+   }
+   #combo2>button{
+     margin-top: 6%;
+     padding: 16px;
+     border-radius: 14px;
+     border-style: none;
+   }
+   #card2>div>img{
+     margin-top:10% ;
+     height: 80vh;
+     margin-left: 12%;
+   }
+   mark{
+     color: orangered;
+     background-color:rgb(168, 206, 128);
+   }
+
+   .caraup{
+     text-align: center;
+     margin-top:4%;
+   }
+   .caraup>p{
+     font-size: 24px;
+   }
+
+   #lowerslide{
+     height: 70vh;
+   }
+
+.vertical-menu {
+  width: 80%; /* Set a width if you like */
+  height:350px;
+  overflow-y:auto;
+  margin: auto;
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #04AA6D; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+#inner{
+  display: flex;
+  justify-content: space-between;
+}
+#inner>div>img{
+  height: 350px;
+  border-radius: 16px;
+}
+#inners{
+  text-align: center; 
+  margin-top: 9%;
+  margin-left: 17%;
+}
+#lastbar{
+  background-color: #e6c865;
+  margin-top:-10%;
+  text-align: center;
+  background-size: cover;
+}
+#lastbar>h1{
+  
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#lastcard{
+margin-top: 3%;
+text-align: center;
+}
+#lastcard>p{
+  font-size: 25px;
+}
+#boxx{
+     height: 50vh;
+     box-shadow:gainsboro;       
+   }
+   #boxx>img{
+    height: 30vh;
+    border-radius: 12%;
+   }
+   
+   .cardend{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+    
+}
+#footer{
+  background-color:rgb(127 160 91);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%;
+}
+
+#foot1{
+  margin-top: 3%;
+}
+
+
+#service{       
+        display: grid;
+        gap: 12px;
+        grid-template-columns:repeat(3,1fr) ;
+        grid-template-rows: repeat(2,auto);        
+        text-align: center;        
+      }
+      
+      #service1>p{
+        margin-top: -2%;
+        color: red;
+      }
+      #service1>h5{
+          font-size: 22px;
+      }
+
+      #service>div{
+        margin-bottom: 4%;       
+      }
+      #service1>img{
+      height: 60vh;
+      border-radius: 8px;
+      box-shadow: #bbb;
+      }
+      #row{
+          display: flex;
+          justify-content: space-evenly;
+          margin-left: 20%;
+          margin-right: 20%;
+          margin-bottom: 7%;
+      }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="top">
+    <h1>Delivering in Mumbai and Delhi | Same day delivery!</h1>
+   </div>
+
+    <div id="container">
+
+    <div id="containers">
+
+       <div id="sub">
+            <div class="dropdown">
+                <button class="dropbtn">SHOP</button>
+                <div class="dropdown-content">
+                  <a href="allfruits.html">ALL FRUITS</a>
+                  <a href="#">FRESH CUTS</a>
+                  <a href="#">FRUIT COMBOS</a>
+                  <a href="#">GIFTS BY KIMAYE</a>
+                  <a href="#">GRAPE FAMILY BY KIMAYE</a>
+                  <a href="#">RETURN AND REPLACEMENT</a>
+                  <a href="index.html">COMMUNITY BUYING</a>
+                </div>
+            </div>
+         </div>   
+
+         <div id="sub">
+            <div class="dropdown">
+                <button class="dropbtn">LEARN</button>
+                <div class="dropdown-content">
+                  <a href="#">OUR STORY</a>
+                  <a href="#">WHY KIMAYE</a>
+                  <a href="#">TRACEABILITY</a>
+                  <a>BEYOND FRUITS</a>
+                </div>
+            </div>
+         </div>
+         
+         <div id="sub">
+            <div class="dropdown">
+                <button class="dropbtn">GROW</button>
+                <div class="dropdown-content">                 
+                </div>
+            </div>
+         </div>         
+    </div>
+
+    <div id="containers">
+        <img id ="logo" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" />
+    </div>
+
+    <div id="containers">
+        <div id="sub1">
+        <img id="logo2" src="https://cdn.icon-icons.com/icons2/2642/PNG/512/google_map_location_logo_icon_159350.png" />
+        </div>
+        <div id="sub1"><h5><a href="alert.html">Mumbai</a></h5></div>  
+        <div>
+          <!-- Load an icon library -->
+          
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="navbar">
+  
+  <a href="#"><i class="fa fa-fw fa-search"></i></a>
+  <a href="#"><i class="fa fa-fw fa-user"></i></a>
+  <a href="#"><i class="fa fa-fw fa-envelope" id="mod"></i></a>
+</div>
+
+        </div>         
+    </div>
+    </div>
+  </div>
+<div id="row">
+    <h5><a href="allfruits.html">ALL FRUITS</a></h5>
+  <h5><a href="freshcuts.html">FRESH CUTS</a></h5>
+  <h5><a href="fruitcombos.html">FRUIT COMBOS</a></h5>
+  <h5><a href="index.html">GIFT BY KIMAYE</a></h5>
+</div>
+  
+
+  <div id="service">
+
+    <div id="service1">
+      <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Grapescombo_1_540x.png?v=1642492575"/>
+      <h5>KIMAYE JAMUN</h5>
+      <p>RS 100</p>
+      <!-- keep image,h5,p here -->
+    </div>
+    <div id="service1">
+      <!-- keep image,h5,p here -->
+      <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/GPS-BB_540x.png?v=1642492910"/>
+      <h5>KIMAYE SUMMER COMBO</h5>
+      <p>RS 180</p>
+    </div>
+    <div id="service1">
+      <!-- keep image,h5,p here -->
+      <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Grapescombo_540x.png?v=1641883595"/>
+      <h5>KIMAYE WATERMELON</h5>
+      <p>RS 80</p>
+    </div>
+
+    
+
+        <div id="service1">
+          <img src=""/>
+          <h5></h5>
+          <p></p>
+          <!-- keep image,h5,p here -->
+        </div>
+        <div id="service1">
+          <!-- keep image,h5,p here -->
+          <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Wholesome-combo_540x.jpg?v=1618497683"/>
+          <h5></h5>
+          <p></p>
+        </div>
+        <div id="service1">
+          <!-- keep image,h5,p here -->
+          <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/products/KiwiBlueberry_540x.png?v=1617983685"/>
+          <h5></h5>
+          <p>RS 156</p>
+        </div>
+
+
+        
+            
+  </div>
+  <div id="row">
+    <h5><a href="allfruits.html">ALL FRUITS</a></h5>
+  <h5><a href="freshcuts.html">FRESH CUTS</a></h5>
+  <h5><a href="fruitcombos.html">FRUIT COMBOS</a></h5>
+  <h5><a href="index.html">GIFT BY KIMAYE</a></h5>
+</div>
+  <div id="footer">
+    <div id="foot1">
+      <h3>FAQ'S</br>
+      Contact Us</br>
+      Shipping & Return Policy</br>
+      Terms & Conditions</br>
+      Privacy Policy</h3>
+    </div>
+    <div id="foot1">
+      <h2>Follow us on</h2>
+      <div>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756"/>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756"/>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756"/>
+      </div>
+    </div>
+    <border></border>
+  </div>
+</div>
+</body>   
+</html>
